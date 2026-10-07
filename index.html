@@ -35,8 +35,7 @@
   <meta name="twitter:image" content="https://luoac.github.io/assets/img/og-card.png">
 
   <!-- Structured data: tells search engines who this page is about.
-       Keep it valid JSON (watch the commas). When you add a profile photo, add
-       "image": "https://luoac.github.io/assets/img/profile.jpg" to the Person. -->
+       Keep it valid JSON (watch the commas). -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -66,6 +65,7 @@
         "givenName": "Aocheng",
         "familyName": "Luo",
         "url": "https://luoac.github.io/",
+        "image": "https://luoac.github.io/assets/img/profile.jpg",
         "email": "mailto:luoac@stu.pku.edu.cn",
         "jobTitle": ["Ph.D. Student", "Navigation Algorithm Intern"],
         "affiliation": {
@@ -153,11 +153,8 @@
       <div class="container hero-grid">
         <aside class="profile">
           <div class="avatar">
-            <!-- To use a photo: save it as assets/img/profile.jpg (square, >= 400 px),
-                 then replace the next line with:
-                 <img src="assets/img/profile.jpg" alt="Aocheng Luo" width="360" height="360">
-                 and add the photo's URL as "image" in the JSON-LD block in <head>. -->
-            <span class="avatar-initials" aria-hidden="true">AL</span>
+            <!-- Profile photo: replace assets/img/profile.jpg (square, >= 400 px) to update it. -->
+            <img src="assets/img/profile.jpg" alt="Aocheng Luo" width="480" height="480">
           </div>
           <ul class="social" aria-label="Contact and profiles">
             <li><a href="mailto:luoac@stu.pku.edu.cn" title="Email: luoac@stu.pku.edu.cn" aria-label="Email"><svg aria-hidden="true"><use href="#i-mail"/></svg></a></li>
@@ -174,7 +171,7 @@
           </p>
           <div class="bio">
             <p>
-              I am Aocheng Luo (Luo Aocheng), a Ph.D. student at the School of Advanced Manufacturing and Robotics,
+              I am Aocheng Luo, a Ph.D. student at the School of Advanced Manufacturing and Robotics,
               <a href="https://english.pku.edu.cn/">Peking University</a>, advised by
               <a href="https://scholar.google.com/citations?user=Gudfky4AAAAJ">Prof. Junzhi Yu</a> (IEEE Fellow).
               I am currently a Navigation Algorithm Intern at <a href="https://www.lightorigins.com/en">Light Origins</a>,
@@ -370,7 +367,8 @@
           <div class="panel">
             <h3 class="panel-title">Education</h3>
             <ul class="timeline">
-              <li class="current">
+              <li class="current has-logo">
+                <img class="tl-logo" src="assets/img/pku-emblem.svg" alt="Peking University emblem" width="56" height="56" loading="lazy">
                 <div class="tl-head">
                   <span class="tl-org">Peking University</span>
                   <span class="tl-date">2023 – 2028 (expected)</span>
@@ -380,7 +378,8 @@
                   <li>Advisor: Prof. Junzhi Yu (IEEE Fellow)</li>
                 </ul>
               </li>
-              <li>
+              <li class="has-logo">
+                <img class="tl-logo" src="assets/img/bit-emblem.svg" alt="Beijing Institute of Technology emblem" width="56" height="56" loading="lazy">
                 <div class="tl-head">
                   <span class="tl-org">Beijing Institute of Technology</span>
                   <span class="tl-date">2019 – 2023</span>

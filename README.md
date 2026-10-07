@@ -82,7 +82,7 @@ All content is in `index.html`. Each section starts with a comment banner such a
 | Add experience / education | Copy one `<li>` in the matching `.timeline` (newest first). `class="current"` draws the filled dot; remove it when a role ends. |
 | Add an award | Copy one `<li>` in **Honors & Awards** and put the year in `<span class="year">`. For academic-year awards, use the final year (2024–25 → `2025`). |
 | Add a profile link (LinkedIn, etc.) | Add an `<li>` to the `.social` list in **About**, and add the same URL to `sameAs` in the JSON-LD block in `<head>` (keep the commas valid). |
-| Add a photo | Save a square photo (at least 400 px) as `assets/img/profile.jpg` and follow the comment inside `<div class="avatar">`. Also add `"image": "https://luoac.github.io/assets/img/profile.jpg"` to the Person in the JSON-LD block. |
+| Change the photo | Replace `assets/img/profile.jpg` with a square photo (at least 400 px, head and shoulders). |
 | Add a CV | Put an **English** PDF at `assets/cv.pdf` and add `<li><a href="assets/cv.pdf" title="CV (PDF)" aria-label="CV"><svg aria-hidden="true"><use href="#i-paper"/></svg></a></li>` to the `.social` list. Never publish the Chinese CV: it contains a phone number and birth date. |
 | Post an accepted manuscript | IEEE lets authors post their accepted version (not the IEEE-formatted PDF) on a personal site with the copyright notice and DOI. Save it under `assets/papers/` and add a `PDF` button next to the paper's links. |
 | Change colors | Edit the tokens under `:root` at the top of `assets/css/style.css`. |

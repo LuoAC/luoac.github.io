@@ -247,14 +247,6 @@ ol {
   object-fit: cover;
 }
 
-.avatar-initials {
-  font-size: 3.4rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--accent-strong);
-  user-select: none;
-}
-
 .social {
   display: flex;
   justify-content: center;
@@ -590,6 +582,21 @@ ol {
   color: var(--text-faint);
 }
 
+/* optional institution emblem at the top right of a timeline entry */
+.timeline > li.has-logo {
+  padding-right: 76px;
+  min-height: 64px;
+}
+
+.tl-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
 .tl-role {
   color: var(--accent-strong);
   font-weight: 500;
@@ -826,10 +833,6 @@ abbr[title] {
     height: 140px;
   }
 
-  .avatar-initials {
-    font-size: 2.7rem;
-  }
-
   .hero-name,
   .hero-tagline {
     text-align: center;
@@ -870,6 +873,15 @@ abbr[title] {
 
   .pub {
     padding-left: 36px;
+  }
+
+  .timeline > li.has-logo {
+    padding-right: 60px;
+  }
+
+  .tl-logo {
+    width: 46px;
+    height: 46px;
   }
 }
 
