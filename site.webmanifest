@@ -1,0 +1,11 @@
+{
+  "name": "Aocheng Luo",
+  "short_name": "Aocheng Luo",
+  "icons": [
+    { "src": "/assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#f0f6fc",
+  "background_color": "#f0f6fc",
+  "display": "browser"
+}
