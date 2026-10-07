@@ -77,11 +77,10 @@ All content is in `index.html`. Each section starts with a comment banner such a
 | To do this | Edit |
 | --- | --- |
 | Add a news item | Copy one `<li>` in **News** and put it at the top (newest first). |
-| Add a featured project | Copy one `<article class="project">` block in **Featured Research**. Put the image in `assets/img/` (about 1200 px wide; 16:10 looks best) and update the links. |
-| Show a diagram without cropping | Use `<a class="project-media contain" …>` for that project's image. |
+| Add a featured project | Copy one `<article class="project">` block in **Featured Research**. Put the image (a teaser figure or photo, any aspect ratio, about 1800 px wide) in `assets/img/` and update the links. Images are never cropped: they are shown full width, at most 440 px tall. |
 | Add a publication | Copy one `<li class="pub">` in **Selected Publications**. Wrap your own name in `<span class="me">…</span>`. Numbering is automatic. |
 | Add experience / education | Copy one `<li>` in the matching `.timeline` (newest first). `class="current"` draws the filled dot; remove it when a role ends. |
-| Add an award | Copy one `<li>` in **Honors & Awards** and put the year in `<span class="year">`. |
+| Add an award | Copy one `<li>` in **Honors & Awards** and put the year in `<span class="year">`. For academic-year awards, use the final year (2024–25 → `2025`). |
 | Add a profile link (LinkedIn, etc.) | Add an `<li>` to the `.social` list in **About**, and add the same URL to `sameAs` in the JSON-LD block in `<head>` (keep the commas valid). |
 | Add a photo | Save a square photo (at least 400 px) as `assets/img/profile.jpg` and follow the comment inside `<div class="avatar">`. Also add `"image": "https://luoac.github.io/assets/img/profile.jpg"` to the Person in the JSON-LD block. |
 | Add a CV | Put an **English** PDF at `assets/cv.pdf` and add `<li><a href="assets/cv.pdf" title="CV (PDF)" aria-label="CV"><svg aria-hidden="true"><use href="#i-paper"/></svg></a></li>` to the `.social` list. Never publish the Chinese CV: it contains a phone number and birth date. |

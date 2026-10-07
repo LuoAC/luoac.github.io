@@ -230,7 +230,8 @@
     </section>
 
     <!-- ===================== Featured research =====================
-         One <article class="project"> per project. Images live in assets/img/. -->
+         One <article class="project"> per project. Images live in assets/img/;
+         any aspect ratio works (shown full width, at most 440 px tall). -->
     <section id="research" class="section">
       <div class="container">
         <h2 class="section-title">Featured Research</h2>
@@ -239,10 +240,12 @@
 
           <!-- LightNav-0 -->
           <article class="project" id="lightnav-0">
-            <a class="project-media" href="https://www.lightorigins.com/en/blog/lightnav-0" tabindex="-1" aria-hidden="true">
-              <img src="assets/img/lightnav0-cover.jpg" width="1200" height="750" loading="lazy" decoding="async"
-                   alt="A humanoid, a wheeled-legged robot, a quadruped and a drone crossing a crosswalk">
-            </a>
+            <div class="project-media">
+              <a href="https://www.lightorigins.com/en/blog/lightnav-0" tabindex="-1" aria-hidden="true">
+                <img src="assets/img/lightnav0-teaser.webp" width="1824" height="847" loading="lazy" decoding="async"
+                     alt="LightNav-0 overview: simulation data engine, three-stage model training, zero-shot deployment on different robots, and benchmark results">
+              </a>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="chip">arXiv 2026</span>
@@ -269,10 +272,12 @@
 
           <!-- VLingNav -->
           <article class="project" id="vlingnav">
-            <a class="project-media" href="https://shaoanwang.github.io/VLingNav-web/" tabindex="-1" aria-hidden="true">
-              <img src="assets/img/vlingnav-real-world.jpg" width="932" height="528" loading="lazy" decoding="async"
-                   alt="VLingNav on real quadruped robots: finding a washing machine, following a person, searching for an image goal and tracking a cyclist">
-            </a>
+            <div class="project-media">
+              <a href="https://shaoanwang.github.io/VLingNav-web/" tabindex="-1" aria-hidden="true">
+                <img src="assets/img/vlingnav-teaser.webp" width="1824" height="876" loading="lazy" decoding="async"
+                     alt="VLingNav overview: architecture with AdaCoT and VLingMem, a navigation example with reasoning and memory, benchmark results and real-world deployment">
+              </a>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="chip">arXiv 2026</span>
@@ -298,10 +303,12 @@
 
           <!-- Depth-based quadruped locomotion & navigation -->
           <article class="project" id="depth-quadruped">
-            <a class="project-media" href="https://doi.org/10.1109/TASE.2026.3687076" tabindex="-1" aria-hidden="true">
-              <img src="assets/img/quadruped-depth-nav.jpg" width="931" height="625" loading="lazy" decoding="async"
-                   alt="A quadruped robot weaving between cardboard boxes to reach a goal, then climbing stairs and walking on pebbles and snow">
-            </a>
+            <div class="project-media">
+              <a href="https://ieeexplore.ieee.org/document/11494056" tabindex="-1" aria-hidden="true">
+                <img src="assets/img/quadruped-depth-nav.jpg" width="931" height="625" loading="lazy" decoding="async"
+                     alt="A quadruped robot weaving between cardboard boxes to reach a goal, then climbing stairs and walking on pebbles and snow">
+              </a>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="chip">IEEE T-ASE 2026</span>
@@ -448,25 +455,26 @@
           <div class="panel">
             <h3 class="panel-title">Honors &amp; Awards</h3>
             <ul class="plain-list">
-              <li><span>Merit Student, Peking University (twice)</span><span class="year">2024–25, 2025–26</span></li>
-              <li><span>Industrial Bank Scholarship, Peking University</span><span class="year">2024–25</span></li>
-              <li><span>Research Excellence Award, Peking University</span><span class="year">2023–24</span></li>
+              <li><span>Merit Student, Peking University (twice)</span><span class="year">2025, 2026</span></li>
+              <li><span>Industrial Bank Scholarship, Peking University</span><span class="year">2025</span></li>
+              <li><span>Research Excellence Award, Peking University</span><span class="year">2024</span></li>
               <li><span>Outstanding Graduate of Beijing</span><span class="year">2023</span></li>
-              <li><span>Xu Teli Scholarship (BIT&rsquo;s highest student honor), Beijing Institute of Technology</span><span class="year">2022–23</span></li>
-              <li><span>National Scholarship, Ministry of Education of China</span><span class="year">2019–20</span></li>
+              <li><span>Xu Teli Scholarship (BIT&rsquo;s highest student honor), Beijing Institute of Technology</span><span class="year">2023</span></li>
+              <li><span>National Scholarship, Ministry of Education of China</span><span class="year">2020</span></li>
             </ul>
           </div>
           <div class="panel">
             <h3 class="panel-title">Academic Service</h3>
             <ul class="plain-list">
-              <li><span>Reviewer, <em>IEEE Transactions on Automation Science and Engineering</em> <span class="nowrap">(T-ASE)</span></span></li>
-              <li><span>Reviewer, <em>IEEE Robotics and Automation Letters</em> <span class="nowrap">(RA-L)</span></span></li>
-              <li><span>Reviewer, <em>IEEE International Conference on Robotics and Automation</em> (ICRA)</span></li>
-              <li><span>Reviewer, <em>IEEE/RSJ International Conference on Intelligent Robots and Systems</em> (IROS)</span></li>
+              <li><span><strong>Reviewer:</strong>
+                <abbr class="nowrap" title="IEEE Transactions on Automation Science and Engineering">IEEE T-ASE</abbr>,
+                <abbr class="nowrap" title="IEEE Robotics and Automation Letters">IEEE RA-L</abbr>,
+                <abbr class="nowrap" title="IEEE International Conference on Robotics and Automation">ICRA</abbr>,
+                <abbr class="nowrap" title="IEEE/RSJ International Conference on Intelligent Robots and Systems">IROS</abbr></span></li>
             </ul>
             <h3 class="panel-title" style="margin-top:28px">Skills</h3>
             <ul class="plain-list">
-              <li><span>Python, C++, PyTorch, Transformers, ROS</span></li>
+              <li><span>Python, C++, PyTorch, ROS</span></li>
               <li><span>Isaac Lab, Isaac Gym, Isaac Sim, Habitat</span></li>
             </ul>
           </div>
