@@ -77,7 +77,7 @@ All content is in `index.html`. Each section starts with a comment banner such a
 | To do this | Edit |
 | --- | --- |
 | Add a news item | Copy one `<li>` in **News** and put it at the top (newest first). |
-| Add a featured project | Copy one `<article class="project">` block in **Featured Research**. Put the image (a teaser figure or photo, any aspect ratio, about 1800 px wide) in `assets/img/` and update the links. Images are never cropped: they are shown full width, at most 440 px tall. |
+| Add a featured project | Copy one `<article class="project">` block in **Featured Research**. Put the image (a teaser figure or photo, any aspect ratio, about 1800 px wide) in `assets/img/` and update the links. Images are never cropped: they fill the left column at their own aspect ratio. |
 | Add a publication | Copy one `<li class="pub">` in **Selected Publications**. Wrap your own name in `<span class="me">…</span>`. Numbering is automatic. |
 | Add experience / education | Copy one `<li>` in the matching `.timeline` (newest first). `class="current"` draws the filled dot; remove it when a role ends. |
 | Add an award | Copy one `<li>` in **Honors & Awards** and put the year in `<span class="year">`. For academic-year awards, use the final year (2024–25 → `2025`). |

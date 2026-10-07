@@ -396,15 +396,15 @@ ol {
   gap: 24px;
 }
 
-/* Figure on top, text below. Named grid areas keep the layout intact even if
-   a browser extension injects extra elements into the card. */
+/* Figure on the left, text on the right (stacked on small screens). Named
+   grid areas keep the layout intact even if a browser extension injects
+   extra elements into the card. */
 .project {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-areas:
-    "media"
-    "body";
-  gap: 22px;
+  grid-template-columns: 360px minmax(0, 1fr);
+  grid-template-areas: "media body";
+  gap: 28px;
+  align-items: start;
   padding: 24px;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -430,13 +430,10 @@ ol {
   display: block;
 }
 
-/* any aspect ratio: full width, at most 440px tall, centered */
+/* any aspect ratio: fills the column width, never cropped */
 .project-media img {
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: 100%;
-  max-height: 440px;
-  margin: 0 auto;
 }
 
 .project-body {
@@ -806,6 +803,10 @@ abbr[title] {
 
 @media (max-width: 860px) {
   .project {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "media"
+      "body";
     gap: 18px;
   }
 
